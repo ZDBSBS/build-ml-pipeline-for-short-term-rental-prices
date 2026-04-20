@@ -37,6 +37,17 @@ def go(args):
     # Convert last_review to datetime
     df["last_review"] = pd.to_datetime(df["last_review"])
 
+    # Basic cleaning
+    df = df.drop_duplicates()
+    df = df.dropna(subset=["price"])
+    df = df[df["price"].between(args.min_price, args.max_price)]
+
+    # Boundary filter
+    idx = df['longitude'].between(-74.25, -73.50) & df['latitude'].between(40.5, 41.2)
+    df = df[idx].copy()
+
+    logger.info("Cleaned data has %s rows and %s columns", *df.shape)
+
     # Save cleaned data
     cleaned_filename = "clean_sample.csv"
     df.to_csv(cleaned_filename, index=False)
