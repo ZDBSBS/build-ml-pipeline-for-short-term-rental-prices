@@ -1,3 +1,13 @@
+## Project Links
+
+- **GitHub Repository**:  
+  [https://github.com/ZDBSBS/build-ml-pipeline-for-short-term-rental-prices.git](https://github.com/ZDBSBS/build-ml-pipeline-for-short-term-rental-prices.git)<img width="525" height="19" alt="image" src="https://github.com/user-attachments/assets/e0d9e3aa-62c6-4ab8-83a2-ecb2f9069a49" />
+
+
+- **Weights & Biases Project**:  
+  [https://wandb.ai/zied-besbes-cariad/nyc_airbnb?nw=nwuserziedbesbes](https://wandb.ai/zied-besbes-cariad/nyc_airbnb?nw=nwuserziedbesbes)<img width="495" height="19" alt="image" src="https://github.com/user-attachments/assets/911bd9c0-5da7-444a-a995-e94222942ba0" />
+
+
 # Build an ML Pipeline for Short-Term Rental Prices in NYC
 You are working for a property management company renting rooms and properties for short periods of 
 time on various rental platforms. You need to estimate the typical price for a given property based 
